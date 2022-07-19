@@ -1,0 +1,25 @@
+{
+  "name": "project-final-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.6.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mdb-ui-kit": "^4.3.0",
+    "mongoose": "^5.10.11",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.7.7",
+    "nodemon": "^2.0.6",
+    "react-scripts": "^2.1.3"
+  }
+}

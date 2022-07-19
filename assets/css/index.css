@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+@import '~mdb-ui-kit/css/mdb.min.css';
+:root {
+    --color-orange: #DB5113;
+    --color-red: #B00609;
+    --color-moderate-orange: #CCAB65;
+    --color-soft-orange: #EBD1A1;
+}
+
+.navbar {
+    background-color: var(--color-soft-orange);
+    width: 100%;
+}
+
+header a {
+    color: black;
+    text-decoration: none;  
+}
+
+main {
+    height: 100vh;
+    background-image: url('../img/pizza-img1.jpg');
+}
+
+.text-body {
+    height: 100%;
+}
+
+.text-body p {
+    color: white;
+}
+
+
+footer {
+    background-color: var(--color-orange);
+    color: black;
+    width: 100%;
+    clear: both;
+    position: relative; 
+    
+}
