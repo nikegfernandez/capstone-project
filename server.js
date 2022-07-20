@@ -41,13 +41,25 @@ app.get('/', (req, res)=> {
     res.render("index")
 })
 
+//render page moved to router.js
+// router.get('/menu',function(req,res){
+//     res.render(path.join(__dirname+'/views/menu.ejs'));
+//   });
+// router.get('/restaurant',function(req,res){
+//     res.render(path.join(__dirname+'/views/restaurant.ejs'));
+//   });
+//   router.get('/login',function(req,res){
+//     res.render(path.join(__dirname+'/views/login.ejs'));
+//   });
+
 
 //Contact US HTML
 app.use(express.json());
 app.use('/', router);  
-router.get('/contact',function(req,res){
-    res.sendFile(path.join(__dirname+'/assets/contactForm.html'));
-  });
+//move to router.js
+// router.get('/contact',function(req,res){
+//     res.render(path.join(__dirname+'/views/contact.ejs'));
+//   });
 
 app.post('/', (req, res)=> {
     console.log(req.body);
@@ -61,9 +73,9 @@ app.post('/', (req, res)=> {
     })
 
     const mailOption = {
-        from: req.body.email,
+        from: req.body.cemail,
         to: 'developizza@gmail.com',
-        subject: `Message from ${req.body.email}: ${req.body.subject}`,
+        subject: `Message from ${req.body.cemail}: ${req.body.subject}`,
         text: req.body.message
     }
     transporter.sendMail(mailOption,(error, info) => {

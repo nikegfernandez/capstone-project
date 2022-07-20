@@ -22,6 +22,21 @@ route.get('/add-user', services.add_user)
  */
 route.get('/update-user', services.update_user)
 
+// PAGE ROUTES
+route.get('/menu',function(req,res){
+    res.render('menu');
+  });
+route.get('/restaurant',function(req,res){
+    res.render('restaurant');
+  });
+route.get('/login',function(req,res){
+    res.render('login');
+  });
+route.get('/contact',function(req,res){
+    res.render('contact');
+  });
+
+
 
 // API
 route.post('/api/users', controller.create);
